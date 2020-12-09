@@ -2,7 +2,12 @@
 public class Main {
 
     public static void main(String[] args) {
-
-        // Try out your class here
+        Message test = new Message("testsender", "testcontent");
+        MessagingService service = new MessagingService();
+        
+        service.add(test);
+        
+        System.out.println(service.getMessages());
+        
     }
 }
